@@ -1,7 +1,7 @@
 (function ($) {
   'use strict';
 
-  // Preloader js
+  // Preloader js    
   $(window).on('load', function () {
     $('.preloader').fadeOut(100);
   });
@@ -19,6 +19,8 @@
       $('.navigation').css('margin-top','-'+0+'px');
     }
   });
+
+  
 
   // Background-images
   $('[data-background]').each(function () {
@@ -100,5 +102,6 @@
       });
     });
   });
+
 
 })(jQuery);
