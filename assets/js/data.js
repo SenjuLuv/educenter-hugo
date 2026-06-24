@@ -152,7 +152,8 @@ const siteData = {
 };
 
 // Helper functions for rendering
-function renderCourseCard(course) {
+function renderCourseCard(course, index) {
+  const coursePage = index !== undefined ? `course-${index + 1}.html` : '#';
   return `
     <div class="col-lg-4 col-sm-6 mb-5">
       <div class="card p-0 border-primary rounded-0 hover-shadow">
@@ -162,9 +163,9 @@ function renderCourseCard(course) {
             <li class="list-inline-item"><i class="ti-calendar"></i> ${course.duration}</li>
             <li class="list-inline-item"><i class="ti-bookmark-alt"></i> ${course.category}</li>
           </ul>
-          <h4 class="card-title"><a href="#">${course.title}</a></h4>
+          <h4 class="card-title"><a href="${coursePage}">${course.title}</a></h4>
           <p class="card-text mb-4">${course.summary}</p>
-          <a href="pages/contact.html" class="btn btn-primary btn-sm">Apply now</a>
+          <a href="${coursePage}" class="btn btn-primary btn-sm">Apply now</a>
         </div>
       </div>
     </div>
@@ -189,7 +190,8 @@ function renderEventCard(event) {
   `;
 }
 
-function renderBlogPost(post) {
+function renderBlogPost(post, index) {
+  const blogPage = index !== undefined ? `blog-${index + 1}.html` : '#';
   return `
     <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
       <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
@@ -199,9 +201,9 @@ function renderBlogPost(post) {
             <li class="list-inline-item mr-3 ml-0"><i class="ti-calendar"></i> ${post.date}</li>
             <li class="list-inline-item mr-3 ml-0"><i class="ti-user"></i> <a href="#">${post.author}</a></li>
           </ul>
-          <h4 class="card-title"><a href="#">${post.title}</a></h4>
+          <h4 class="card-title"><a href="${blogPage}">${post.title}</a></h4>
           <p class="card-text">${post.summary}</p>
-          <a href="#" class="btn btn-primary btn-sm">Read More</a>
+          <a href="${blogPage}" class="btn btn-primary btn-sm">Read More</a>
         </div>
       </div>
     </article>
@@ -275,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Load courses
   const coursesContainer = document.getElementById('courses-container');
   if (coursesContainer) {
-    coursesContainer.innerHTML = siteData.courses.map(renderCourseCard).join('');
+    coursesContainer.innerHTML = siteData.courses.map((c, i) => renderCourseCard(c, i)).join('');
   }
 
   // Load events
@@ -287,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Load blog
   const blogContainer = document.getElementById('blog-container');
   if (blogContainer) {
-    blogContainer.innerHTML = siteData.blog.map(renderBlogPost).join('');
+    blogContainer.innerHTML = siteData.blog.map((p, i) => renderBlogPost(p, i)).join('');
   }
 
   // Load footer courses
@@ -333,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Load all courses on courses page
   const allCoursesContainer = document.getElementById('all-courses-container');
   if (allCoursesContainer) {
-    allCoursesContainer.innerHTML = siteData.courses.map(renderCourseCard).join('');
+    allCoursesContainer.innerHTML = siteData.courses.map((c, i) => renderCourseCard(c, i)).join('');
   }
 
   // Load all events on events page
@@ -345,6 +347,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Load all blog posts on blog page
   const allBlogContainer = document.getElementById('all-blog-container');
   if (allBlogContainer) {
-    allBlogContainer.innerHTML = siteData.blog.map(renderBlogPost).join('');
+    allBlogContainer.innerHTML = siteData.blog.map((p, i) => renderBlogPost(p, i)).join('');
   }
 });
