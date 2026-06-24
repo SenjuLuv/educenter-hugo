@@ -3,42 +3,42 @@ const siteData = {
   courses: [
     {
       title: "Photography",
-      image: "images/courses/course-1.jpg",
+      image: "/assets/images/courses/course-1.jpg",
       duration: "06 Month",
       category: "Photography",
       summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       title: "Mathematics",
-      image: "images/courses/course-2.jpg",
+      image: "/assets/images/courses/course-2.jpg",
       duration: "06 Month",
       category: "Mathematics",
       summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       title: "Artificial Intelligence",
-      image: "images/courses/course-3.jpg",
+      image: "/assets/images/courses/course-3.jpg",
       duration: "06 Month",
       category: "Artificial Intelligence",
       summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       title: "JavaScript",
-      image: "images/courses/course-4.jpg",
+      image: "/assets/images/courses/course-4.jpg",
       duration: "06 Month",
       category: "Programming",
       summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       title: "Algorithm",
-      image: "images/courses/course-5.jpg",
+      image: "/assets/images/courses/course-5.jpg",
       duration: "06 Month",
       category: "Programming",
       summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       title: "Vlogging",
-      image: "images/courses/course-6.jpg",
+      image: "/assets/images/courses/course-6.jpg",
       duration: "06 Month",
       category: "Photography",
       summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -47,21 +47,21 @@ const siteData = {
   events: [
     {
       title: "Social media and behavior economics conference",
-      image: "images/events/event-1.jpg",
+      image: "/assets/images/events/event-1.jpg",
       location: "Dhanmondi, Dhaka",
       date: "09 Mar, 2030",
       fee: "From: $699"
     },
     {
       title: "Social media and behavior economics conference",
-      image: "images/events/event-2.jpg",
+      image: "/assets/images/events/event-2.jpg",
       location: "Dhanmondi, Dhaka",
       date: "09 Mar, 2030",
       fee: "From: $699"
     },
     {
       title: "Social media and behavior economics conference",
-      image: "images/events/event-3.jpg",
+      image: "/assets/images/events/event-3.jpg",
       location: "Dhanmondi, Dhaka",
       date: "09 Mar, 2030",
       fee: "From: $699"
@@ -70,7 +70,7 @@ const siteData = {
   blog: [
     {
       title: "Elegant Light Box Paper Cut Dioramas",
-      image: "images/blog/post-1.jpg",
+      image: "/assets/images/blog/post-1.jpg",
       author: "John Doe",
       date: "06 Jul, 2019",
       categories: ["Automation System"],
@@ -78,7 +78,7 @@ const siteData = {
     },
     {
       title: "Elegant Light Box Paper Cut Dioramas",
-      image: "images/blog/post-2.jpg",
+      image: "/assets/images/blog/post-2.jpg",
       author: "John Doe",
       date: "06 Jul, 2019",
       categories: ["Education System"],
@@ -86,7 +86,7 @@ const siteData = {
     },
     {
       title: "Elegant Light Box Paper Cut Dioramas",
-      image: "images/blog/post-3.jpg",
+      image: "/assets/images/blog/post-3.jpg",
       author: "Mark Dinn",
       date: "06 Jul, 2019",
       categories: ["Eco System"],
@@ -101,51 +101,51 @@ const siteData = {
   teachers: [
     {
       title: "Clark Malik",
-      image: "images/teachers/teacher-1.jpg",
+      image: "/assets/images/teachers/teacher-1.jpg",
       course: "Computer Science"
     },
     {
       title: "Jacke Mastio",
-      image: "images/teachers/teacher-2.jpg",
+      image: "/assets/images/teachers/teacher-2.jpg",
       course: "Computer Science"
     },
     {
       title: "Devid Luis",
-      image: "images/teachers/teacher-3.jpg",
+      image: "/assets/images/teachers/teacher-3.jpg",
       course: "Humanities"
     }
   ],
   research: [
     {
       title: "Geography",
-      image: "images/research/research-1.jpg",
+      image: "/assets/images/research/research-1.jpg",
       summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       title: "Geography",
-      image: "images/research/research-2.jpg",
+      image: "/assets/images/research/research-2.jpg",
       summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       title: "Geography",
-      image: "images/research/research-3.jpg",
+      image: "/assets/images/research/research-3.jpg",
       summary: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ],
   scholarships: [
     {
       title: "CHEMICAL ENGINEERING",
-      image: "images/scholarship/scholarship-item-1.jpg",
+      image: "/assets/images/scholarship/scholarship-item-1.jpg",
       content: "<ul><li>institutes</li><li>Smart-affiliated research</li><li>Digital Access to Scholarship</li><li>Smart Catalyst</li><li>Smart Library Portal</li><li>Smart research programs</li></ul>"
     },
     {
       title: "CHEMICAL ENGINEERING",
-      image: "images/scholarship/scholarship-item-2.jpg",
+      image: "/assets/images/scholarship/scholarship-item-2.jpg",
       content: "<ul><li>institutes</li><li>Smart-affiliated research</li><li>Digital Access to Scholarship</li><li>Smart Catalyst</li><li>Smart Library Portal</li><li>Smart research programs</li></ul>"
     },
     {
       title: "CHEMICAL ENGINEERING",
-      image: "images/scholarship/scholarship-item-3.jpg",
+      image: "/assets/images/scholarship/scholarship-item-3.jpg",
       content: "<ul><li>institutes</li><li>Smart-affiliated research</li><li>Digital Access to Scholarship</li><li>Smart Catalyst</li><li>Smart Library Portal</li><li>Smart research programs</li></ul>"
     }
   ]
